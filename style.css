@@ -1,0 +1,656 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #302b27;
+    background-color: #faf8f5;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    min-height: 120px;
+
+    background-color: #f5efeb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.logo span {
+    display: block;
+
+    color: #9a806d;
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    font-weight: 600;
+}
+
+.logo h1 {
+    color: #40362f;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    width: 100%;
+    min-height: 65px;
+
+    background-color: #40362f;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d9c2ad;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.secao {
+    min-height: 100vh;
+
+    padding: 90px 8%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.titulo-secao p {
+    color: #a0836e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.titulo-secao h2 {
+    color: #40362f;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.titulo-secao span {
+    color: #776b63;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+.hero {
+    min-height: calc(100vh - 185px);
+
+    background:
+        linear-gradient(
+            rgba(55, 45, 38, 0.55),
+            rgba(55, 45, 38, 0.55)
+        ),
+        url("https://th.bing.com/th/id/R.75884b27f75a90aea34fd9d6a4083bef?rik=Wv0NgaqdLFvpuA&pid=ImgRaw&r=0");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+
+    color: white;
+
+    padding: 30px;
+}
+
+.subtitulo {
+    color: #e5cdb7;
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(45px, 7vw, 75px);
+
+    margin-bottom: 20px;
+}
+
+.hero p:not(.subtitulo) {
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botao {
+    display: inline-block;
+
+    background-color: #a0836e;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 15px 30px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #806654;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOTOS
+========================= */
+
+#fotos {
+    background-color: #faf8f5;
+}
+
+.galeria {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.galeria img {
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(64, 54, 47, 0.15);
+
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================
+   RESERVAS
+========================= */
+
+.reserva {
+    background-color: #efe7e0;
+}
+
+#formReserva {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(64, 54, 47, 0.12);
+}
+
+.grupo-formulario {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.linha-formulario {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.grupo-formulario label {
+    color: #40362f;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d7cec6;
+
+    border-radius: 6px;
+
+    background-color: #fafafa;
+
+    color: #302b27;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+    border-color: #a0836e;
+
+    background-color: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(160, 131, 110, 0.12);
+}
+
+.grupo-formulario textarea {
+    resize: vertical;
+}
+
+.botao-reserva {
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   MENSAGENS
+========================= */
+
+.mensagem {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 6px;
+
+    line-height: 1.6;
+}
+
+.mensagem.sucesso {
+    display: block;
+
+    background-color: #e5f4e8;
+
+    border: 1px solid #9dccaa;
+
+    color: #275b34;
+}
+
+.mensagem.erro {
+    display: block;
+
+    background-color: #fbe5e5;
+
+    border: 1px solid #d89a9a;
+
+    color: #7b2929;
+}
+
+
+/* =========================
+   CONTATOS
+========================= */
+
+.contato {
+    background-color: #faf8f5;
+}
+
+.contatos-grid {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contato-card {
+    background-color: white;
+
+    padding: 35px 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px
+        rgba(64, 54, 47, 0.08);
+
+    transition: 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
+}
+
+.icone {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contato-card h3 {
+    color: #40362f;
+
+    margin-bottom: 10px;
+}
+
+.contato-card p,
+.contato-card a {
+    color: #776b63;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.contato-card a:hover {
+    color: #a0836e;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    min-height: 150px;
+
+    background-color: #40362f;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #d9cfc8;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+footer small {
+    color: #bdb1a8;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        min-height: 100px;
+    }
+
+    .logo h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 0;
+
+        justify-content: space-around;
+
+        padding: 0 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .secao {
+        padding: 70px 5%;
+    }
+
+    .titulo-secao h2 {
+        font-size: 30px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    .hero p:not(.subtitulo) {
+        font-size: 16px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 300px;
+    }
+
+    .linha-formulario {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    #formReserva {
+        padding: 25px;
+    }
+
+    .contatos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 480px) {
+
+    nav {
+        min-height: 55px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 27px;
+    }
+
+    .secao {
+        padding: 60px 20px;
+    }
+
+    #formReserva {
+        padding: 20px 15px;
+    }
+
+}

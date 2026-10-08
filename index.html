@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Afogados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <span>HOTEL</span>
+            <h1>Afogados</h1>
+        </div>
+    </header>
+
+
+    <!-- MENU -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#contatos">Contato</a>
+    </nav>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitulo">SEJA BEM-VINDO</p>
+
+                <h2>Hotel Afogados</h2>
+
+                <p>
+                    Conforto, tranquilidade e uma experiência especial
+                    para tornar sua estadia inesquecível.
+                </p>
+
+                <a href="#reservas" class="botao">
+                    Faça sua reserva
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOTOS -->
+        <section id="fotos" class="secao">
+
+            <div class="titulo-secao">
+
+                <p>CONHEÇA NOSSO HOTEL</p>
+
+                <h2>Fotos do hotel</h2>
+
+                <span>
+                    Conheça um pouco do nosso espaço.
+                </span>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <img
+                    src="https://th.bing.com/th/id/R.75884b27f75a90aea34fd9d6a4083bef?rik=Wv0NgaqdLFvpuA&pid=ImgRaw&r=0"
+                    alt="Área do Hotel Afogados"
+                >
+
+                <img
+                    src="https://th.bing.com/th/id/R.534242a9514e5584f4368dc108c1c647?rik=mMd78mBA%2b%2fcV%2fw&pid=ImgRaw&r=0"
+                    alt="Quarto do Hotel Afogados"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- RESERVAS -->
+        <section id="reservas" class="secao reserva">
+
+            <div class="titulo-secao">
+
+                <p>RESERVE SUA ESTADIA</p>
+
+                <h2>Faça sua reserva</h2>
+
+                <span>
+                    Preencha seus dados para solicitar uma reserva.
+                </span>
+
+            </div>
+
+
+            <form id="formReserva">
+
+                <!-- NOME -->
+                <div class="grupo-formulario">
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL E TELEFONE -->
+                <div class="linha-formulario">
+
+                    <div class="grupo-formulario">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(87) 99999-9999"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATAS -->
+                <div class="linha-formulario">
+
+                    <div class="grupo-formulario">
+
+                        <label for="entrada">
+                            Data de entrada
+                        </label>
+
+                        <input
+                            type="date"
+                            id="entrada"
+                            name="entrada"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="saida">
+                            Data de saída
+                        </label>
+
+                        <input
+                            type="date"
+                            id="saida"
+                            name="saida"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- HÓSPEDES E QUARTO -->
+                <div class="linha-formulario">
+
+                    <div class="grupo-formulario">
+
+                        <label for="hospedes">
+                            Quantidade de hóspedes
+                        </label>
+
+                        <select id="hospedes" name="hospedes" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="1">
+                                1 hóspede
+                            </option>
+
+                            <option value="2">
+                                2 hóspedes
+                            </option>
+
+                            <option value="3">
+                                3 hóspedes
+                            </option>
+
+                            <option value="4">
+                                4 hóspedes
+                            </option>
+
+                            <option value="5">
+                                5 hóspedes
+                            </option>
+
+                            <option value="6">
+                                6 hóspedes
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="grupo-formulario">
+
+                        <label for="quarto">
+                            Tipo de quarto
+                        </label>
+
+                        <select id="quarto" name="quarto" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="Quarto solteiro">
+                                Quarto solteiro
+                            </option>
+
+                            <option value="Quarto duplo">
+                                Quarto duplo
+                            </option>
+
+                            <option value="Quarto de casal">
+                                Quarto de casal
+                            </option>
+
+                            <option value="Quarto família">
+                                Quarto família
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OBSERVAÇÕES -->
+                <div class="grupo-formulario">
+
+                    <label for="observacoes">
+                        Observações
+                    </label>
+
+                    <textarea
+                        id="observacoes"
+                        name="observacoes"
+                        rows="4"
+                        placeholder="Alguma solicitação especial? (opcional)"
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BOTÃO -->
+                <button
+                    type="submit"
+                    class="botao botao-reserva"
+                >
+                    Solicitar reserva
+                </button>
+
+
+                <!-- MENSAGEM -->
+                <div
+                    id="mensagemReserva"
+                    class="mensagem"
+                ></div>
+
+            </form>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contatos" class="secao contato">
+
+            <div class="titulo-secao">
+
+                <p>FALE CONOSCO</p>
+
+                <h2>Entre em contato</h2>
+
+            </div>
+
+
+            <div class="contatos-grid">
+
+                <div class="contato-card">
+
+                    <div class="icone">
+                        📞
+                    </div>
+
+                    <h3>
+                        Telefone
+                    </h3>
+
+                    <a href="tel:+5587999999999">
+                        (87) 99999-9999
+                    </a>
+
+                </div>
+
+
+                <div class="contato-card">
+
+                    <div class="icone">
+                        ✉️
+                    </div>
+
+                    <h3>
+                        E-mail
+                    </h3>
+
+                    <a href="mailto:contato@hotelafogados.com">
+                        hotelafogados1@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contato-card">
+
+                    <div class="icone">
+                        📍
+                    </div>
+
+                    <h3>
+                        Localização
+                    </h3>
+
+                    <p>
+                        Afogados da Ingazeira - PE
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div>
+
+            <h2>
+                Hotel Afogados
+            </h2>
+
+            <p>
+                Conforto e tranquilidade para sua estadia.
+            </p>
+
+            <small>
+                Produzido por Ana Beatriz © 2026
+            </small>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
