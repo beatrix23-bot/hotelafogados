@@ -654,3 +654,23 @@ footer small {
     }
 
 }
+
+/* @media - regras para diferentes telas */
+@media(width < 500px){
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        
+    }
+
+}
